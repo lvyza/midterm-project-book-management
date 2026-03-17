@@ -17,4 +17,4 @@ The table has the following fields:
 | updated_at      | timestamp  | Record update time        |
 
 ## Screenshots
-![Book Management Screenshot](<img width="1920" height="1080" alt="Screenshot 2026-03-17 222551" src="https://github.com/user-attachments/assets/0196627b-74db-491b-a982-6c8205294fdb" />)
+![Book Management Screenshot](https://github.com/user-attachments/assets/0196627b-74db-491b-a982-6c8205294fdb)
