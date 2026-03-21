@@ -27,10 +27,13 @@
         <label for="author" class="form-label">Author</label>
         <input type="text" name="author" class="form-control" value="{{ old('author') }}">
     </div>
-
     <div class="mb-3">
-        <label for="year" class="form-label">Year</label>
-        <input type="number" name="year" class="form-control" value="{{ old('year') }}">
+        <label>ISBN</label>
+        <input type="text" name="isbn" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label for="published_year" class="form-label">Year</label>
+        <input type="number" name="published_year" class="form-control" value="{{ old('published_year') }}">
     </div>
 
     <button type="submit" class="btn btn-primary">Save Book</button>

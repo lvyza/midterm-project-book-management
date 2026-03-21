@@ -21,7 +21,7 @@
     </tr>
     <tr>
         <th>Year</th>
-        <td>{{ $book->year }}</td>
+        <td>{{ $book->published_year }}</td>
     </tr>
 </table>
 @endsection

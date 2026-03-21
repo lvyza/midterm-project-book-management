@@ -10,8 +10,8 @@
         </div>
     @endif
 
-    <form action="{{ route('books.update', $book->id) }}" method="POST">
-        @csrf
+    <form action="{{ route('book.update', $book->id) }}" method="POST">
+        <!-- @csrf -->
         @method('PUT')
         <div class="mb-3">
             <label>Title</label>
@@ -22,15 +22,16 @@
             <input type="text" name="author" class="form-control" value="{{ old('author', $book->author) }}">
         </div>
         <div class="mb-3">
+            <label>ISBN</label>
+            <input type="text" name="isbn" class="form-control" required>
+        </div>
+        <div class="mb-3">
             <label>Published Year</label>
             <input type="number" name="published_year" class="form-control" value="{{ old('published_year', $book->published_year) }}">
         </div>
-        <div class="mb-3">
-            <label>Genre</label>
-            <input type="text" name="genre" class="form-control" value="{{ old('genre', $book->genre) }}">
-        </div>
+
         <button type="submit" class="btn btn-success">Update Book</button>
-        <a href="{{ route('books.index') }}" class="btn btn-secondary">Back</a>
+        <a href="{{ route('book.index') }}" class="btn btn-secondary">Back</a>
     </form>
 </div>
 @endsection 

@@ -23,8 +23,8 @@ class BookController extends Controller
         $request->validate([
             'title' => 'required',
             'author' => 'required',
-            'genre' => 'required',
-            'year' => 'required|integer|min:1000|max:' . date('Y'),
+            // 'isbn' => 'required|unique:books,isbn,' . ($id ?? 'NULL') . ',id',
+            'published_year' => 'required|integer|min:1000|max:' . date('Y'),
         ]);
 
         Book::create($request->all());
@@ -49,14 +49,14 @@ class BookController extends Controller
         $request->validate([
             'title' => 'required',
             'author' => 'required',
-            'genre' => 'required',
-            'year' => 'required|integer|min:1000|max:' . date('Y'),
+            // 'isbn' => 'required|unique:books,isbn,' . ($id ?? 'NULL') . ',id',
+            'published_year' => 'required|integer|min:1000|max:' . date('Y'),
         ]);
 
         $book = Book::findOrFail($id);
         $book->update($request->all());
 
-        return redirect()->route('books.index')->with('success', 'Book updated successfully.');
+        return redirect()->route('book.index')->with('success', 'Book updated successfully.');
     }
 
     public function destroy(string $id)
@@ -64,6 +64,6 @@ class BookController extends Controller
         $book = Book::findOrFail($id);
         $book->delete();
 
-        return redirect()->route('books.index')->with('success', 'Book deleted successfully.');
+        return redirect()->route('book.index')->with('success', 'Book deleted successfully.');
     }
 }
