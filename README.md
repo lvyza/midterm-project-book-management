@@ -17,4 +17,19 @@ The table has the following fields:
 | updated_at      | timestamp  | Record update time        |
 
 ## Screenshots
-![Book Management Screenshot](https://github.com/user-attachments/assets/0196627b-74db-491b-a982-6c8205294fdb)
+
+### Dashboard
+![Dashboard](https://github.com/user-attachments/assets/d50d107d-7b12-4c4b-bf1e-618fa18a0044)
+
+### Edit Button
+![Edit](https://github.com/user-attachments/assets/1cf931d9-50e3-447a-b2ee-624f19ffcb60)
+
+### View Button
+![View](https://github.com/user-attachments/assets/819918e9-8dcf-4b3b-8e7f-41d44460c996)
+
+### Create Button
+![Create](https://github.com/user-attachments/assets/13dca1f6-5e49-4a29-81aa-160238b711db)
+
+### Delete Button
+![Delete](https://github.com/user-attachments/assets/f6f838d5-a393-4533-94ec-79490af71e51)
+
